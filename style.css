@@ -1,0 +1,300 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+* body {
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+* body .container {
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: beige;
+}
+* body .container .nav-bar {
+  position: fixed;
+  width: 100%;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #b3abff;
+  z-index: 999;
+}
+* body .container .nav-bar .box-img {
+  position: relative;
+  width: 200px;
+  height: 100%;
+  background-image: url("HU-LOGO.png");
+  background-size: 100% 95%;
+  overflow-x: hidden;
+}
+* body .container .nav-bar ul {
+  list-style: none;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+* body .container .nav-bar ul li {
+  display: inline-block;
+  margin-left: 13px;
+  font-family: sans-serif;
+}
+* body .container .nav-bar ul li a {
+  text-decoration: none;
+  color: #bb3a06;
+}
+* body .container .nav-bar ul li a:hover {
+  color: #ff4c05;
+  transition: 0.1s;
+}
+
+@media (max-width: 992px) {
+  * body .container .nav-bar {
+    flex-direction: column;
+  }
+  * body .container .nav-bar ul {
+    display: none;
+  }
+}
+.content-body {
+  width: 100%;
+  padding-top: 5.3em;
+  min-height: 100vh;
+  z-index: -1;
+}
+.content-body .content-logo-title {
+  transform: translateY(80px);
+  text-align: center;
+  font-family: sans-serif;
+}
+/* edited 12-30-2023 */
+.content-logo-title-subtitle {
+  color: #7f2cff;
+  font-family:cursive , sans-serif;
+}
+/*  */
+/*  */
+/* edited 12-22-2023 */
+ .content-notes {
+  width: 90%;
+  min-height: 5vh;
+  margin-left: 5%;
+  margin-top: 150px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 0 0 0;
+  font-family: CairoPlay-Black;
+}
+.content-notes h4 , h5 {
+  text-align: center;
+}
+.content-notes .qr-box {
+  width: 100%;
+  height: 50vh;
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.content-notes .qr-box .qr-image {
+  display: inline-block;
+  width: 55vh;
+  height: 50vh;  
+  background-image:url('qr-code.png') ;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 992px){
+  .content-notes .qr-box {
+    display: none;
+  }
+}
+
+/*  */
+/*  */
+.content-body .box-content {
+  width: 90%;
+  min-height: 20vh;
+  margin-left: 5%;
+  margin-top: 30px;
+  border: 2px solid black;
+  border-radius: 24px;
+}
+.content-body .box-content .box-type {
+  width: 100%;
+  min-height: 40vh;
+  padding: 15px;
+  padding-top: 80px;
+}
+.content-body .box-content .box-type .sub-title {
+  font-family: sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+.content-body .box-content .box-type .sub-title::after {
+  content: "";
+  position: absolute;
+  transform: translateY(2px);
+  background: url("icons8-school-50.png");
+  background-size: contain;
+  width: 26px;
+  height: 27px;
+}
+.content-body .box-content .box-type .box-lucture {
+  transform: translateX(12%);
+  padding: 20px;
+  width: 88%;
+  min-height: 40vh;
+}
+.content-body .box-content .box-type .box-lucture .lucture {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+.content-body .box-content .box-type .box-lucture .lucture .lucture-link {
+  position: relative;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  padding: 6px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding-left: 29px;
+}
+.content-body .box-content .box-type .box-lucture .lucture .lucture-link::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  width: 25px;
+  height: 25px;
+  background-image: url(pdf-file.png);
+  background-size: contain;
+}
+.content-body .box-content .biophysics-lab .sub-title::after {
+  content: "";
+  position: absolute;
+  transform: translateY(2px);
+  background: url("chemistry.png");
+  background-size: contain;
+  width: 26px;
+  height: 27px;
+}
+
+.footer {
+  text-transform: capitalize;
+  font-family: sans-serif;
+  padding-top: 10px;
+  width: 100%;
+  height: 5em;
+  background-color: #b3abff;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+ .footer .text-link .text-link-link {
+  color: #fff;
+  font-family: monospace var(--font-bage);
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+@media (max-width: 320px) {
+  .footer {
+    padding-left: 10px;
+  }
+}
+/* edited 12-22-2023 */
+@font-face {
+  font-family: CairoPlay-Black;
+  src: url(CairoPlay-Black.ttf);
+}
+/*  */
+/* edited 12-30-2023 */
+@media (prefers-color-scheme: dark) {
+  * body .container .nav-bar {
+    background-color: #7e78bb;
+  }
+  * body .container .nav-bar ul li a {
+    color: #110722;
+  }
+  * body .container .nav-bar ul li a:hover {
+    color: #ffc03c;
+  }
+  .content-logo-title-subtitle {
+    color: #b3abff;
+    font-family: cursive, sans-serif;
+  }
+  * body .container {
+    -webkit-background-image: linear-gradient(135deg, #0e0d0d, #120922);
+            background-image: linear-gradient(135deg, #0e0d0d, #120922);
+    color: aliceblue;
+  }
+  .content-notes {
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border: 0.5px solid rgba(90, 89, 89, 0.61);
+    -webkit-box-shadow: 0 1px 20px 0 rgba(90, 89, 89, 0.61);
+            box-shadow: 0 1px 20px 0 rgba(90, 89, 89, 0.61);
+  }
+  .content-body .box-content {
+    border: 2px solid aliceblue;
+  }
+  .content-body .box-content .box-type .sub-title::after {
+    content: "";
+    position: absolute;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+    background: url("5545.png");
+    background-size: contain;
+    width: 26px;
+    height: 27px;
+  }
+  .content-body .box-content .box-type .box-lucture .lucture .lucture-link {
+    border: 1px solid aliceblue;
+    color: aliceblue;
+  }
+  .content-body .box-content .box-type .box-lucture .lucture .lucture-link::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 2px;
+    width: 25px;
+    height: 25px;
+    background-image: url("7856-pdf.png");
+    background-size: contain;
+  }
+  .content-body .box-content .biophysics-lab .sub-title::after {
+    content: "";
+    position: absolute;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+    background: url("6e72ch.jpeg");
+    background-size: contain;
+    width: 26px;
+    height: 27px;
+  }
+  .content-body .box-content .box-type .box-lucture .lucture .lucture-link:visited {
+    color: #8e82ff;
+  }
+  .footer {
+    background-color: #68639f;
+    color: #ffffff;
+  }
+}
+/*  */
+/*# sourceMappingURL=style.css.map */
