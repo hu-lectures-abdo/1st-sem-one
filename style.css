@@ -204,10 +204,10 @@
   font-family: sans-serif;
 }
  .footer .text-link .text-link-link {
-  font-family: monospace var(--font-bage);
+  font-family: monospace ;
   letter-spacing: 2px;
   font-size: 0.8rem;
-  font-weight: 100;
+  font-weight: 400;
   text-transform: uppercase;
    color:#000;
 }
